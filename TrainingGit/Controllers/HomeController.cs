@@ -8,8 +8,10 @@ namespace TrainingGit.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(int one=0, int two=0)
         {
+            int result = one + two;
+            ViewBag.result = result;
             return View();
         }
 
